@@ -12,8 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", async (req, res) => {
-    const response = await fetch("http://backend.terraform-aditi.local:5000/submit", {
-        method: "POST",
+    const response = await fetch("http://127.0.0.1:5000/submit", {
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
